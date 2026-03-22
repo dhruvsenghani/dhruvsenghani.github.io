@@ -413,7 +413,7 @@
     .hero-right img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
       opacity: 0;
       animation: heroImgReveal 1.2s ease .3s forwards
     }
@@ -431,7 +431,7 @@
       position: absolute;
       inset: 0;
       z-index: 2;
-      background: linear-gradient(135deg, rgba(124, 158, 245, .08), rgba(167, 139, 250, .05));
+      /* background: linear-gradient(135deg, rgba(124, 158, 245, .08), rgba(167, 139, 250, .05)); */
       mix-blend-mode: screen
     }
 
@@ -1917,7 +1917,7 @@
       <div class="scanlines"></div>
       <div class="hero-counter">
 
-        <div class="counter-label">Projects Completed</div>
+        <!-- <div class="counter-label">Projects Completed</div> -->
       </div>
     </div>
   </section>
@@ -1959,7 +1959,43 @@
           </div>
         </div>
       </div>
+      <!-- PROJECT CARD 03 -->
+      <div class="project-card reveal" onclick="openModal('modal3')">
+        <img src="src\12.jpeg" alt="Samanvay Residential Design">
+        <div class="project-number">03</div>
+        <div class="project-corner"></div>
+        <div class="project-overlay">
+          <div class="project-title">Samanvay — Residential Space Design</div>
+
+          <div class="project-hover-content">
+            <div class="project-desc">
+              A residential project focused on efficient planning, spatial clarity, and modern living within a compact
+              urban context.
+            </div>
+            <div class="project-cta">Open Project →</div>
+          </div>
+        </div>
+      </div>
+      <!-- PROJECT CARD 04 -->
+      <div class="project-card reveal" onclick="openModal('modal4')">
+        <img src="src\19.jpeg" alt="Uday Residential Cluster">
+        <div class="project-number">04</div>
+        <div class="project-corner"></div>
+        <div class="project-overlay">
+          <div class="project-title">Uday — Residential Cluster Design</div>
+
+          <div class="project-hover-content">
+            <div class="project-desc">
+              A rural residential cluster in Kutch focused on community living, climate-responsive design, and
+              vernacular architecture.
+            </div>
+            <div class="project-cta">Open Project →</div>
+          </div>
+        </div>
+      </div>
+
     </div>
+
   </section>
 
   <!-- MODAL 1 -->
@@ -2003,13 +2039,13 @@
       </div>
       <div class="gallery-label">Project Gallery — click any image to view full size</div>
       <div class="modal-gallery" id="gallery1">
-        <div class="gallery-thumb" onclick="openLightbox('gallery1',0)"><img src="src\3.jpeg" alt="Residential Design">
+        <!-- <div class="gallery-thumb" onclick="openLightbox('gallery1',0)"><img src="src\3.jpeg" alt="Residential Design">
           <div class="gallery-caption">Residential Space Design</div>
-        </div>
-        <div class="gallery-thumb" onclick="openLightbox('gallery1',2)"><img src="src\4.jpeg" alt="Construction Stages">
+        </div> -->
+        <div class="gallery-thumb" onclick="openLightbox('gallery1',0)"><img src="src\4.jpeg" alt="Construction Stages">
           <div class="gallery-caption">Construction Stages</div>
         </div>
-        <div class="gallery-thumb" onclick="openLightbox('gallery1',3)"><img src="src\5.jpeg" alt="Construction Stages">
+        <div class="gallery-thumb" onclick="openLightbox('gallery1',1)"><img src="src\5.jpeg" alt="Construction Stages">
           <div class="gallery-caption">Construction Stages</div>
         </div>
       </div>
@@ -2052,28 +2088,188 @@
       </div>
       <div class="gallery-label">Project Gallery — click any image to view full size</div>
       <div class="modal-gallery" id="gallery2">
-        <div class="gallery-thumb" onclick="openLightbox('gallery2',0)"><img src="src\6.jpeg" alt="Landscape Overview">
+        <!-- <div class="gallery-thumb" onclick="openLightbox('gallery2',0)"><img src="src\6.jpeg" alt="Landscape Overview">
           <div class="gallery-caption">Landscape Overview</div>
-        </div>
-        <div class="gallery-thumb" onclick="openLightbox('gallery2',1)"><img src="src\7.jpeg" alt="Site Plan">
+        </div> -->
+        <div class="gallery-thumb" onclick="openLightbox('gallery2',0)"><img src="src\7.jpeg" alt="Site Plan">
           <div class="gallery-caption">Site Plan</div>
         </div>
-        <div class="gallery-thumb" onclick="openLightbox('gallery2',2)"><img src="src\8.jpeg" alt="Gazebo">
+        <div class="gallery-thumb" onclick="openLightbox('gallery2',1)"><img src="src\8.jpeg" alt="Gazebo">
           <div class="gallery-caption">Gazebo</div>
         </div>
-        <div class="gallery-thumb" onclick="openLightbox('gallery2',3)"><img src="src\9.jpeg" alt="Gazebo Views">
+        <div class="gallery-thumb" onclick="openLightbox('gallery2',2)"><img src="src\9.jpeg" alt="Gazebo Views">
           <div class="gallery-caption">Gazebo Views</div>
         </div>
-        <div class="gallery-thumb" onclick="openLightbox('gallery2',4)"><img src="src\10.jpeg" alt="Gazebo Views">
+        <div class="gallery-thumb" onclick="openLightbox('gallery2',3)"><img src="src\10.jpeg" alt="Gazebo Views">
           <div class="gallery-caption">Gazebo Views</div>
         </div>
-        <div class="gallery-thumb" onclick="openLightbox('gallery2',5)"><img src="src\11.jpeg" alt="Gazebo Details">
+        <div class="gallery-thumb" onclick="openLightbox('gallery2',4)"><img src="src\11.jpeg" alt="Gazebo Details">
           <div class="gallery-caption">Gazebo Details</div>
         </div>
       </div>
     </div>
   </div>
 
+  <!-- MODAL 03 -->
+  <div class="modal" id="modal3">
+    <div class="modal-inner">
+      <button class="modal-close" onclick="closeModal('modal3')">← Back to Projects</button>
+
+      <div class="modal-header">
+        <div>
+          <div class="modal-eyebrow">Project 03 — Residential Architecture</div>
+          <h2 class="modal-title">Samanvay — Residential Space Design</h2>
+        </div>
+        <div class="modal-meta-block">
+          <p><strong>Year</strong><br>2023</p>
+          <p><strong>Location</strong><br>Mumbai, India</p>
+        </div>
+      </div>
+
+      <p class="modal-desc">
+        Samanvay is a residential project designed during an internship, focused on creating a balanced relationship
+        between functionality, spatial clarity, and modern living. The design emphasizes efficient planning and a
+        seamless connection between spaces within a compact urban setting.
+      </p>
+
+      <div class="modal-scope">
+        <div class="scope-item">
+          <div class="scope-num">01</div>
+          <div class="scope-text">Efficient 3-bedroom layout with clear zoning for privacy and smooth circulation.</div>
+        </div>
+        <div class="scope-item">
+          <div class="scope-num">02</div>
+          <div class="scope-text">Well-defined structural grid and staircase core ensuring stability and connectivity.
+          </div>
+        </div>
+        <div class="scope-item">
+          <div class="scope-num">03</div>
+          <div class="scope-text">Custom furniture planning for optimized and purposeful spaces.</div>
+        </div>
+        <div class="scope-item">
+          <div class="scope-num">04</div>
+          <div class="scope-text">Strategic openings and balconies for natural light and airflow.</div>
+        </div>
+        <div class="scope-item">
+          <div class="scope-num">05</div>
+          <div class="scope-text">Minimal façade with clean lines and warm material accents.</div>
+        </div>
+      </div>
+
+      <div class="modal-quote">
+        <p>"Samanvay reflects harmony—bringing together space, structure, and lifestyle to enhance everyday living."</p>
+        <cite>— Dhruv Senghani</cite>
+      </div>
+
+      <div class="gallery-label">Project Gallery — click any image to view full size</div>
+
+      <div class="modal-gallery" id="gallery3">
+        <div class="gallery-thumb" onclick="openLightbox('gallery3',0)">
+          <img src="src\13.jpeg" alt="Samanvay Exterior">
+          <div class="gallery-caption">2D View</div>
+        </div>
+
+        <div class="gallery-thumb" onclick="openLightbox('gallery3',1)">
+          <img src="src\14.jpeg" alt="Floor Plan">
+          <div class="gallery-caption">FOUNDATION PLAN</div>
+        </div>
+
+        <div class="gallery-thumb" onclick="openLightbox('gallery3',2)">
+          <img src="src\15.jpeg" alt="Section Drawing">
+          <div class="gallery-caption">GROUND FLOOR PLAN</div>
+        </div>
+        <div class="gallery-thumb" onclick="openLightbox('gallery3',3)">
+          <img src="src\16.jpeg" alt="Section Drawing">
+          <div class="gallery-caption">FIRST FLOOR PLAN</div>
+        </div>
+        <div class="gallery-thumb" onclick="openLightbox('gallery3',4)">
+          <img src="src\17.jpeg" alt="Section Drawing">
+          <div class="gallery-caption">Elivations</div>
+        </div>
+        <div class="gallery-thumb" onclick="openLightbox('gallery3',5)">
+          <img src="src\18.jpeg" alt="Section Drawing">
+          <div class="gallery-caption">Section Drawing</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- MODAL 04 -->
+  <div class="modal" id="modal4">
+    <div class="modal-inner">
+      <button class="modal-close" onclick="closeModal('modal4')">← Back to Projects</button>
+
+      <div class="modal-header">
+        <div>
+          <div class="modal-eyebrow">Project 04 — Residential Architecture</div>
+          <h2 class="modal-title">Uday</h2>
+        </div>
+        <div class="modal-meta-block">
+          <p><strong>Year</strong><br>2023</p>
+          <p><strong>Location</strong><br>Kutch, Gujarat, India</p>
+        </div>
+      </div>
+
+      <p class="modal-desc">
+        Uday is a residential cluster designed to reimagine rural community living by balancing tradition and
+        functionality. Located in Kutch, Gujarat, the project integrates housing, social, and cultural spaces within a
+        cohesive and climate-responsive layout centered around a shared courtyard.
+      </p>
+
+      <div class="modal-scope">
+        <div class="scope-item">
+          <div class="scope-num">01</div>
+          <div class="scope-text">Cluster-based planning organized around a central courtyard to promote interaction.
+          </div>
+        </div>
+        <div class="scope-item">
+          <div class="scope-num">02</div>
+          <div class="scope-text">Compact residential units designed for family comfort, privacy, and efficiency.</div>
+        </div>
+        <div class="scope-item">
+          <div class="scope-num">03</div>
+          <div class="scope-text">Integration of vernacular elements like sloped roofs and locally responsive materials.
+          </div>
+        </div>
+        <div class="scope-item">
+          <div class="scope-num">04</div>
+          <div class="scope-text">Use of sustainable techniques such as rammed earth construction for thermal
+            performance.</div>
+        </div>
+        <div class="scope-item">
+          <div class="scope-num">05</div>
+          <div class="scope-text">Optimized orientation for natural light, ventilation, and climatic comfort.</div>
+        </div>
+      </div>
+
+      <div class="modal-quote">
+        <p>"The intention was to design more than just housing — to create a living ecosystem where community, culture,
+          and comfort coexist harmoniously."</p>
+        <cite>— Dhruv Senghani</cite>
+      </div>
+
+      <div class="gallery-label">Project Gallery — click any image to view full size</div>
+
+      <div class="modal-gallery" id="gallery4">
+        <div class="gallery-thumb" onclick="openLightbox('gallery4',0)">
+          <img src="src\20.jpeg" alt="Cluster Planning">
+          <div class="gallery-caption">Cluster Layout</div>
+        </div>
+
+        <div class="gallery-thumb" onclick="openLightbox('gallery4',1)">
+          <img src="src\21.jpeg" alt="Courtyard Space">
+          <div class="gallery-caption">Central Courtyard</div>
+        </div>
+
+        <div class="gallery-thumb" onclick="openLightbox('gallery4',2)">
+          <img src="src\22.jpeg" alt="Material Detail">
+          <div class="gallery-caption">Material & Construction</div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
   <!-- EXPERIENCE -->
   <section id="experience" class="s-pad">
     <div class="section-eyebrow reveal">
@@ -2115,7 +2311,7 @@
           <div class="about-corner br"></div>
         </div>
         <div class="about-stat-card">
-          <div class="stat-num">2+</div>
+          <div class="stat-num">5</div>
           <div class="stat-lbl">Projects</div>
         </div>
         <div class="about-stat-card">
@@ -2136,8 +2332,8 @@
           <div class="about-detail"><span class="ad-label">Status</span><span class="ad-val">Architecture Student — Open
               to Internship</span></div>
         </div>
-        <div class="goal-tag">Seeking architectural internship opportunities to gain professional experience and develop
-          practical design skills.</div>
+        <!-- <div class="goal-tag">Seeking architectural internship opportunities to gain professional experience and develop
+          practical design skills.</div> -->
       </div>
     </div>
   </section>
@@ -2271,6 +2467,25 @@
   </footer>
 
   <script>
+    const track = document.getElementById("projectsTrack");
+    const section = document.querySelector(".projects-wrapper");
+
+    function horizontalScroll() {
+      const rect = section.getBoundingClientRect();
+      const scrollWidth = track.scrollWidth - window.innerWidth;
+
+      // progress (0 → 1)
+      const progress = Math.min(
+        Math.max(-rect.top / (section.offsetHeight - window.innerHeight), 0),
+        1
+      );
+
+      // move left (scroll down) & right (scroll up)
+      track.style.transform = `translateX(-${progress * scrollWidth}px)`;
+    }
+
+    window.addEventListener("scroll", horizontalScroll);
+    window.addEventListener("resize", horizontalScroll);
     // ── CURSOR ──
     const cursor = document.getElementById('cursor'), ring = document.getElementById('cursor-ring'), trail = document.getElementById('cursor-trail');
     let mx = 0, my = 0, rx = 0, ry = 0;
